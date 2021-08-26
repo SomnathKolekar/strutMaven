@@ -1,0 +1,12 @@
+com\struts\action\AddAction.class
+com\struts\action\DeleteAction.class
+com\struts\dao\LoginDAO.class
+com\struts\action\UpdateAction.class
+com\struts\pojo\Book.class
+com\struts\DbUtil.class
+com\struts\action\LoginAction.class
+com\struts\action\UpdateDataAction.class
+com\struts\dao\BookManagementDAO.class
+com\struts\action\DBAction.class
+com\struts\action\BooksAction.class
+com\struts\pojo\Login.class

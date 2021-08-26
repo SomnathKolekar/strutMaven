@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default" namespace="/">
+
+<action name="dbInitialize" class="com.struts.action.DBAction" >
+<result name="success">login.jsp</result>
+</action>
+
+<action name="login" class="com.struts.action.LoginAction" >
+<result type="redirectAction">booksAction.action</result>
+<result name="error">login.jsp</result>
+</action>
+
+<action name="booksAction" class="com.struts.action.BooksAction" >
+<result name="success">Books.jsp</result>
+</action>
+
+<action name="addAction" class="com.struts.action.AddAction" >
+<result type="redirectAction">booksAction.action</result>
+</action>
+
+<action name="updateDataAction" class="com.struts.action.UpdateDataAction" >
+<result name="success">UpdateProduct.jsp</result>
+</action>
+
+<action name="updateAction" class="com.struts.action.UpdateAction" >
+<result type="redirectAction">booksAction.action</result>
+</action>
+
+<action name="deleteAction" class="com.struts.action.DeleteAction" >
+<result type="redirectAction">booksAction.action</result>
+</action>
+
+</package>
+</struts>    
